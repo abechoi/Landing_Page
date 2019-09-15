@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+
+<!-- 
+	CSS is here due to the FCC tester.
+	Needed for a media query and flex property
+-->
+<style type="text/css">
+	
+#nav-bar{
+	display: flex;
+	margin-left: 100px;
+	margin-top: 0px;
+}
+
+@media (max-height: 800px; max-width: 100px){
+	html{
+		font-family: Calibri;
+		text-align: center;
+		background-color: #EDEAD0;
+		font-size: 10px;
+	}
+}
+
+</style>
+
+<main>
+	
+	<link rel="stylesheet" type="text/css" href="landing.css">
+	<script type="text/javascript" src="../bundle.js"></script>
+
+	<header class="header" id="header">
+		<img id="header-img" src="https://s3.amazonaws.com/freecodecamp/original_trombones.png"
+        alt="original trombones logo">
+		<nav id="nav-bar">
+			<div>
+				<a href="#features" class="nav-link">Features</a>
+			</div>
+			<div>
+				<a href="#how" class="nav-link">How It Works</a>
+			</div>
+			<div>
+				<a href="#pricing" class="nav-link">Pricing</a>
+			</div>
+		</nav>
+	</header>
+
+	<body>
+		<form id="form" action="https://www.freecodecamp.com/email-submit">
+			<h1>Handcrafted Masterpieces</h1>
+			<div>
+				<input id="email" type="email" name="email" placeholder="Enter email address" required>
+			</div>
+			<div>
+				<input id="submit" type="submit" value="Get Started" class="btn" />
+			</div>
+		</form>
+
+		<div id="my-section">
+			<section id="features">
+				<div class="feature-points">
+					<h1>Premium Materials</h1>
+					<p>Our trombones use the shiniest brass which is sourced locally.
+					This will increase the longevity of your purchase.</p>
+				</div>
+				<div class="feature-points">
+					<h1>Fast Shipping</h1>
+					<p>We make sure you recieve your trombone as soon as we have 
+					finished making it. We also provide free returns if you are not 
+					satisfied.</p>
+				</div>
+				<div class="feature-points">
+					<h1>Quality Assurance</h1>
+					<p>For every purchase you make, we will ensure there are no 
+					damages or faults and we will check and test the pitch of your 
+					instrument.</p>
+				</div>
+			</section>
+			<section id="how">
+				<div class="video-row">
+					<p>Play the video for a demonstration!</p>
+					<iframe 
+						id="video" 
+						height="315"
+						width="700" 
+						frameborder="0" 
+						src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+						allowfullscreen
+					></iframe>
+				</div>
+			</section>
+			<section id="pricing">
+				<div class="price-row">
+					<div class="price-box">
+						<h2>TENOR TROMBONE</h2>
+						<h1>$600</h1>
+						<p>Lorem ipsum</p>
+						<p>Lorem ipsum</p>
+						<p>Lorem ipsum</p>
+						<div>
+							<button id="select"><strong>SELECT</strong></button>
+						</div>
+					</div>
+					<div class="price-box">
+						<h2>BASS TROMBONE</h2>
+						<h1>$900</h1>
+						<p>Lorem ipsum</p>
+						<p>Lorem ipsum</p>
+						<p>Lorem ipsum</p>
+						<div>
+							<button id="select"><strong>SELECT</strong></button>
+						</div>
+					</div>
+					<div class="price-box">
+						<h2>VALVE TROMBONE</h2>
+						<h1>$1200</h1>
+						<p>Lorem ipsum</p>
+						<p>Lorem ipsum</p>
+						<p>Lorem ipsum</p>
+						<div>
+							<button id="select"><strong>SELECT</strong></button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</body>
+	<footer>
+		<div id="footer-bar">
+			<a class="footer-link" href="#">Privacy</a>
+			<a class="footer-link" href="#">Terms</a>
+			<a class="footer-link" href="#">Contacts</a>
+		</div>
+		<div>
+			<p id="copyright">Copyright 2016, Original Trombones</p>
+		</div>
+	</footer>
+</main>
